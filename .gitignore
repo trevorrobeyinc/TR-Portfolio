@@ -1,0 +1,6 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+
+# deps (none needed — this is a plain static site)
+node_modules/
