@@ -230,3 +230,56 @@ h1, h2, h3 { line-height: 1.15; letter-spacing: -0.02em; margin: 0; }
 .reveal { opacity: 0; transform: translateY(14px); transition: opacity .5s ease, transform .5s ease; }
 .reveal.is-in { opacity: 1; transform: none; }
 @media (prefers-reduced-motion: reduce) { .reveal { opacity: 1; transform: none; transition: none; } }
+
+/* ===========================================================================
+   Subpages — PVA case study + rendered documentation (additive; new classes)
+   =========================================================================== */
+.subpage { max-width: var(--maxw); margin: 0 auto; padding: clamp(2rem,6vw,3.2rem) clamp(1rem,4vw,2rem) 0; }
+.subpage__head { margin-bottom: 2.2rem; }
+.subpage__head h1 { font-size: clamp(2rem,6vw,3.1rem); font-weight: 800; margin: .35rem 0 0; }
+.subpage__lede { max-width: 64ch; color: var(--ink-soft); font-size: clamp(1.02rem,2.2vw,1.18rem); margin: 1rem 0 0; }
+.backlink { display: inline-block; font-weight: 600; font-size: .9rem; margin-bottom: .6rem; }
+.subpage__meta { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.5rem; }
+
+.case-section { max-width: var(--maxw); margin: 0 auto; padding: clamp(2.2rem,6vw,3.4rem) clamp(1rem,4vw,2rem); }
+.case-section + .case-section { border-top: 1px solid var(--line); }
+.case-section > h2 { font-size: clamp(1.4rem,4vw,1.9rem); font-weight: 750; margin-bottom: 1.4rem; }
+.case-section > h2 .num { color: var(--accent); font-size: .9rem; margin-right: .5rem; font-variant-numeric: tabular-nums; }
+.case-lede { max-width: 66ch; color: var(--ink-soft); margin: 0 0 1.2rem; }
+
+/* figures / diagrams */
+.figure { margin: 0 0 1.6rem; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--bg-elev); box-shadow: var(--shadow); }
+.figure img { display: block; width: 100%; height: auto; }
+.figure figcaption { padding: .7rem 1rem; color: var(--ink-faint); font-size: .86rem; border-top: 1px solid var(--line); }
+
+/* document embeds */
+.docgrid { display: grid; gap: 1.4rem; }
+.doccard { border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-elev); box-shadow: var(--shadow); overflow: hidden; }
+.doccard__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .3rem 1rem; padding: 1rem 1.2rem .3rem; }
+.doccard__head h3 { font-size: 1.05rem; font-weight: 700; }
+.doccard__desc { color: var(--ink-soft); font-size: .92rem; margin: .1rem 1.2rem .3rem; }
+.doccard__links { display: flex; flex-wrap: wrap; gap: 1rem; padding: 0 1.2rem 1rem; }
+.doccard__links a { font-weight: 600; font-size: .9rem; }
+.doc-embed { width: 100%; height: 620px; border: 0; border-top: 1px solid var(--line); display: block; background: var(--bg-soft); }
+@media (max-width: 720px) { .doc-embed { height: 400px; } }
+
+/* rendered markdown body (build guide) */
+.md-body { max-width: 82ch; margin: 0 auto; color: var(--ink); }
+.md-body h1, .md-body h2, .md-body h3, .md-body h4 { font-weight: 750; line-height: 1.2; margin: 2rem 0 .8rem; letter-spacing: -.01em; }
+.md-body h1 { font-size: 1.8rem; }
+.md-body h2 { font-size: 1.4rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+.md-body h3 { font-size: 1.12rem; }
+.md-body h4 { font-size: 1rem; }
+.md-body p, .md-body li { color: var(--ink-soft); }
+.md-body ul, .md-body ol { padding-left: 1.3rem; }
+.md-body li { margin: .3rem 0; }
+.md-body code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: .86em; background: var(--bg-soft); border: 1px solid var(--line); border-radius: 5px; padding: .1em .35em; }
+.md-body pre { background: var(--bg-soft); border: 1px solid var(--line); border-radius: 10px; padding: 1rem; overflow-x: auto; }
+.md-body pre code { background: none; border: 0; padding: 0; font-size: .82rem; }
+.md-body blockquote { margin: 1rem 0; padding: .5rem 1rem; border-left: 3px solid var(--accent); color: var(--ink-soft); background: var(--accent-soft); border-radius: 0 8px 8px 0; }
+.md-body a { font-weight: 500; }
+.md-body hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+.md-body table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: .9rem; display: block; overflow-x: auto; }
+.md-body th, .md-body td { border: 1px solid var(--line); padding: .5rem .7rem; text-align: left; vertical-align: top; }
+.md-body th { background: var(--bg-soft); font-weight: 700; color: var(--ink); }
+.md-body strong { color: var(--ink); }
