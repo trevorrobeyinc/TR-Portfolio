@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trevor Robey — Portfolio</title>
-  <meta name="description" content="Trevor Robey — a versatile builder across software, operations, AI systems, marketing, and e-commerce. Selected projects and background." />
+  <meta name="description" content="Trevor Robey — a versatile builder across software, operations, AI systems, marketing, and e-commerce. Background and experience." />
   <meta name="color-scheme" content="light dark" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="css/style.css" />
@@ -17,7 +17,6 @@
       <a class="nav__brand" href="#top" aria-label="Home">TR</a>
       <nav class="nav__links" id="nav-links" aria-label="Primary">
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
@@ -46,8 +45,7 @@
           quietly does the work.
         </p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="#projects">View projects</a>
-          <a class="btn btn--ghost" href="assets/Trevor-Robey-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
+          <a class="btn btn--primary" href="assets/Trevor-Robey-Resume.pdf" target="_blank" rel="noopener">Download résumé</a>
         </div>
         <ul class="hero__meta" aria-label="Quick links">
           <li><a href="https://github.com/trevoralexanderrobey" target="_blank" rel="noopener">github.com/trevoralexanderrobey</a></li>
@@ -69,11 +67,7 @@
           a domain quickly and shipping something that works in it.
         </p>
         <p>
-          This site collects work that shows that range beyond any single field. The featured project below is a
-          from-scratch operations tool: a mobility-equipment lending system built on Google AppSheet, Google Sheets,
-          and Apps Script, with a mocked CRM integration and a real automated-test suite. It's here because it
-          demonstrates practical software, data-modeling, and systems-integration skills — a different toolbox than
-          marketing, applied the same way.
+          This site collects work that shows that range beyond any single field.
         </p>
         <ul class="about__tags" aria-label="Areas of focus">
           <li>App &amp; automation building</li>
@@ -86,64 +80,19 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects" aria-labelledby="projects-h">
-      <div class="section__head reveal">
-        <span class="section__num">02</span>
-        <h2 id="projects-h">Projects</h2>
-      </div>
-      <!-- Project data. Add a project by appending an object to this array. -->
-      <script id="projects-data" type="application/json">
-      {
-        "projects": [
-          {
-            "eyebrow": "Operations · Software",
-            "title": "PVA Mobility Equipment Loan Closet",
-            "subtitle": "Google AppSheet · Google Sheets · Apps Script · mock CRM integration",
-            "description": "A medical-equipment lending system for a volunteer ambulance service: staff track inventory, loans, returns, donations, and support tickets, with automated reminders and a donor-CRM sync in a safe mock mode. The backend, Apps Script integration, and step-by-step build guide are complete (11/11 tests); the AppSheet front end assembles from the guide.",
-            "highlights": [
-              "Three-layer design — AppSheet UX + event bots, Google Sheets as the record, Apps Script for integration and scheduled jobs",
-              "Mock Little Green Light CRM sync with match-before-create logic; 11/11 automated integration tests, zero network calls in mock mode",
-              "Relative-dated demo data that regenerates for any demo day, plus a referential-integrity checker"
-            ],
-            "tags": ["AppSheet", "Google Apps Script", "JavaScript", "Data modeling", "Automation", "Integration"],
-            "links": [
-              { "label": "View case study", "href": "projects/pva-loan-closet.html" },
-              { "label": "Source code", "href": "https://github.com/trevoralexanderrobey/pva-loan-closet" }
-            ]
-          }
-        ]
-      }
-      </script>
-
-      <div class="projects" id="projects-grid" aria-live="polite">
-        <!-- JS replaces this with cards from #projects-data. Static card = no-JS fallback. -->
-        <article class="project">
-          <p class="project__eyebrow">Operations · Software</p>
-          <h3 class="project__title">PVA Mobility Equipment Loan Closet</h3>
-          <p class="project__subtitle">Google AppSheet · Google Sheets · Apps Script · mock CRM integration</p>
-          <p class="project__desc">A medical-equipment lending system for a volunteer ambulance service, with automated reminders and a donor-CRM sync in a safe mock mode. Backend, Apps Script integration, and build guide complete (11/11 tests); the AppSheet front end assembles from the guide.</p>
-          <div class="project__links">
-            <a href="projects/pva-loan-closet.html">View case study →</a>
-            <a href="https://github.com/trevoralexanderrobey/pva-loan-closet" target="_blank" rel="noopener">Source code →</a>
-          </div>
-        </article>
-      </div>
-    </section>
-
     <!-- EXPERIENCE -->
     <section class="section" id="experience" aria-labelledby="experience-h">
       <div class="section__head reveal">
-        <span class="section__num">03</span>
+        <span class="section__num">02</span>
         <h2 id="experience-h">Experience</h2>
       </div>
       <ol class="timeline">
         <li class="timeline__item reveal">
           <div class="timeline__dot" aria-hidden="true"></div>
           <div class="timeline__body">
-            <div class="timeline__meta"><span class="timeline__role">Founder &amp; CEO</span><span class="timeline__dates">Mar 2025 – Present</span></div>
-            <p class="timeline__org">Trevor Robey Inc.</p>
-            <p class="timeline__desc">AI consultancy delivering marketing automation and strategy to small businesses; designs workflows in GoHighLevel and advises on AI tool adoption.</p>
+            <div class="timeline__meta"><span class="timeline__role">Founder &amp; CEO</span><span class="timeline__dates">May 2026 – Present</span></div>
+            <p class="timeline__org">Trevor Robey Intelligence Network Citations LLC</p>
+            <p class="timeline__desc">Citation-traced biomedical due diligence for biotech investors and pharma BD; built its multi-agent research engine on Claude agents, with an automated citation-integrity gate.</p>
           </div>
         </li>
         <li class="timeline__item reveal">
@@ -151,7 +100,7 @@
           <div class="timeline__body">
             <div class="timeline__meta"><span class="timeline__role">Freelance Digital Marketer</span><span class="timeline__dates">Oct 2020 – Present</span></div>
             <p class="timeline__org">Independent Consultant</p>
-            <p class="timeline__desc">Multi-channel campaigns across email, social, and SEO; social and paid-advertising management; performance reporting.</p>
+            <p class="timeline__desc">Multi-channel campaigns across email, social, and SEO; social and paid-advertising management; performance reporting. Since March 2025, AI-powered marketing automation for small businesses, including GoHighLevel workflows and AI-tool adoption.</p>
           </div>
         </li>
         <li class="timeline__item reveal">
@@ -168,7 +117,7 @@
     <!-- EDUCATION -->
     <section class="section" id="education" aria-labelledby="education-h">
       <div class="section__head reveal">
-        <span class="section__num">04</span>
+        <span class="section__num">03</span>
         <h2 id="education-h">Education</h2>
       </div>
       <div class="edu">
@@ -198,7 +147,7 @@
     <!-- CONTACT -->
     <section class="section section--contact" id="contact" aria-labelledby="contact-h">
       <div class="section__head reveal">
-        <span class="section__num">05</span>
+        <span class="section__num">04</span>
         <h2 id="contact-h">Contact</h2>
       </div>
       <div class="contact reveal">
